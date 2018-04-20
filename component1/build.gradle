@@ -18,10 +18,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':component_service')
     implementation 'com.android.support:appcompat-v7:27.1.1'
 }
 
 combuild {
-    applicationName = 'com.luojilab.reader.runalone.application.ReaderApplication'
+    applicationName = 'io.weichao.component1.MainApplication'
     isRegisterCompoAuto = true
 }
