@@ -12,6 +12,7 @@
 bin/
 gen/
 out/
+UIRouterTable/
 
 # Gradle files
 .gradle/

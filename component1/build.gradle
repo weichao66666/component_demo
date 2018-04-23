@@ -7,6 +7,11 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "component1"]
+            }
+        }
     }
     buildTypes {
         release {
@@ -20,6 +25,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':component_service')
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    annotationProcessor 'com.github.jimu:router-anno-compiler:1.0.1'
 }
 
 combuild {
